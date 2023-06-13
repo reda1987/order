@@ -29,7 +29,7 @@ Route::group([
     'middleware' => 'api'    
 ], function ($router) {
     Route::post('/product', [ProductsController::class, 'store']);
-    Route::get('/product/{product}', [ProductsController::class, 'show']);
+    Route::get('/product/{id}', [ProductsController::class, 'show']);
     Route::put('/product/{id}', [ProductsController::class, 'update']);
     Route::delete('/product/{id}', [ProductsController::class, 'destroy']); 
 });
